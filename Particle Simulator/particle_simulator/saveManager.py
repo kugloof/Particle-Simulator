@@ -1,5 +1,12 @@
-from particle_simulator import *
+from tkinter.filedialog import asksaveasfilename, askopenfilename
 
+from tkinter import *
+
+import pickle
+
+import os
+
+from particle_simulator.particle import Particle
 
 class SaveManager:
     def __init__(self, sim):

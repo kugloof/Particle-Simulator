@@ -1,4 +1,7 @@
-from particle_simulator import *
+
+import numpy as np
+
+
 
 
 class Grid:

@@ -1,4 +1,21 @@
-from particle_simulator import *
+
+from pynput.keyboard import Listener, Key, KeyCode
+
+from tkinter import messagebox
+import PIL.Image, PIL.ImageTk
+
+from tkinter import *
+import numpy as np
+
+import time
+import math
+import cv2
+
+
+from particle_simulator.grid import Grid
+from particle_simulator.particle import Particle
+from particle_simulator.saveManager import SaveManager
+from particle_simulator.gui import GUI
 
 
 class Simulation:

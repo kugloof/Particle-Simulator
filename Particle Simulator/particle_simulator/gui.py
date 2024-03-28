@@ -1,4 +1,14 @@
-from particle_simulator import *
+
+from tkinter import colorchooser
+from tkinter import messagebox
+import tkinter.font as tkfont
+from tkinter import ttk
+from tkinter import *
+import numpy as np
+import threading
+import time
+import math
+import os
 
 
 class GUI:

@@ -1,5 +1,11 @@
-from particle_simulator import *
 
+import numpy as np
+
+import random
+
+from particle_simulator.particle import Particle
+
+from particle_simulator.simulation import Simulation
 sim = Simulation(width=650, height=600, title="Simulation", gridres=(50, 50),
                  temperature=0, g=0, air_res=0.05, ground_friction=0)
 
@@ -12,7 +18,7 @@ for i in range(50):
              mass=1, bounciness=0.7, velocity=np.zeros(2), collisions=False,
              attract_r=-1, repel_r=10, attraction_strength=0.25, repulsion_strength=1)
 
-# Rope (for code-window)
+#Rope (for code-window)
 # for i in range(1, len(self.particles)):
 #     self.link([self.particles[i], self.particles[i-1]])
 
@@ -22,12 +28,12 @@ for i in range(50):
 # spread_x = 40
 # spread_y = 40
 # grid = np.empty((rows, cols), dtype=np.object)
-#
+
 # for ix, x in enumerate(range(10, 10+spread_x*cols, spread_x)):
 # 	for iy, y in enumerate(range(10, 10+spread_y*rows, spread_y)):
 # 		self.add_particle(x, y)
 # 		grid[iy][ix] = self.particles[-1]
-#
+
 # for ix, x in enumerate(range(10, 10+spread_x*cols, spread_x)):
 # 	for iy, y in enumerate(range(10, 10+spread_y*rows, spread_y)):
 # 		if ix > 0:
@@ -53,7 +59,7 @@ for i in range(50):
 
 # Rainbow wave (for code-window)
 # from colorsys import hsv_to_rgb
-#
+
 # h = 0
 # for x in range(50, self.width-49, 6):
 # 	color = [round(i * 255) for i in hsv_to_rgb(h%1, 1, 1)]
@@ -68,8 +74,8 @@ for i in range(50):
 # sim.gui.air_res_entry.insert(0, 0)
 # attraction_constant = 10**-3
 # gravitational_constant = attraction_constant * 20
-#
-#
+
+
 # def add_planet(x, y, r=20, color=None, m=100, v=10, center=np.zeros(2)):
 #     if v != 0:
 #         center_vector = center - np.array([x, y])
